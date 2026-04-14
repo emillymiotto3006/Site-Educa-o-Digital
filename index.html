@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoÁgua Brasil | Consciência e Preservação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="accessibility-bar" aria-label="Controles de Acessibilidade">
+        <button onclick="changeFontSize('increase')" aria-label="Aumentar fonte">A+</button>
+        <button onclick="changeFontSize('decrease')" aria-label="Diminuir fonte">A-</button>
+        <button onclick="toggleContrast()" aria-label="Alternar Alto Contraste">Contraste</button>
+    </nav>
+
+    <header role="banner">
+        <h1>Escassez de Água no Brasil</h1>
+        <p>Entenda o cenário e faça a diferença.</p>
+    </header>
+
+    <main>
+        <section id="stats-section" aria-labelledby="stats-title">
+            <h2 id="stats-title">Dados Atuais</h2>
+            <div id="stats-container" class="grid-layout">
+                </div>
+        </section>
+
+        <section id="solutions" aria-labelledby="solutions-title">
+            <h2 id="solutions-title">Como Podemos Reverter?</h2>
+            <div id="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="content-1">
+                        Reflorestamento de Nascentes
+                    </button>
+                    <div id="content-1" class="accordion-content" hidden>
+                        <p>A proteção das matas ciliares permite que a água penetre no solo e alimente os lençóis freáticos.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="regions-carousel" aria-label="Regiões mais afetadas">
+            <h2>Estados em Alerta</h2>
+            <div class="carousel">
+                <div id="carousel-track" class="carousel-track">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="prevBtn" aria-label="Slide anterior">❮</button>
+                    <button id="nextBtn" aria-label="Próximo slide">❯</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Projeto EcoÁgua Brasil. Design focado em acessibilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
